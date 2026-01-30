@@ -24,14 +24,13 @@ export function Newsletter() {
           className="max-w-2xl mx-auto text-center"
         >
           <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4">
-            Join Our World
+            Get Recipe Drops
           </p>
           <h2 className="font-serif text-4xl md:text-5xl mb-6">
-            Be the First to Know
+            New Kits, New Dishes
           </h2>
           <p className="text-background/70 text-lg mb-10">
-            Subscribe to receive exclusive offers, early access to new collections, 
-            and insider fragrance tips from our master perfumers.
+            Subscribe to get early access to new Pakistani dish kits, discounts, and simple cooking tips.
           </p>
 
           {submitted ? (

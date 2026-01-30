@@ -2,12 +2,13 @@ import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { ShoppingBag, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { BRAND } from '@/lib/brand';
 
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/products', label: 'Products' },
   { href: '/about', label: 'Our Story' },
-  { href: '/why-afnan', label: 'Why Afnan?' },
+  { href: '/why-afnan', label: 'Why Us?' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -31,7 +32,7 @@ export function Header() {
 
             <Link href="/" data-testid="link-logo-mobile">
               <h1 className="font-serif text-lg tracking-[0.1em] text-foreground whitespace-nowrap">
-                AFNAN PERFUMES
+                {BRAND.name}
               </h1>
             </Link>
 
@@ -65,7 +66,7 @@ export function Header() {
             {/* Center Logo */}
             <Link href="/" data-testid="link-logo-desktop">
               <h1 className="font-serif text-2xl tracking-[0.15em] text-foreground whitespace-nowrap">
-                AFNAN PERFUMES
+                {BRAND.name}
               </h1>
             </Link>
 
@@ -114,7 +115,7 @@ export function Header() {
               className="fixed left-0 top-0 bottom-0 w-80 max-w-[85vw] bg-background z-50 lg:hidden"
             >
               <div className="flex items-center justify-between p-4 border-b border-border">
-                <h2 className="font-serif text-lg tracking-wider">AFNAN PERFUMES</h2>
+                <h2 className="font-serif text-lg tracking-wider">{BRAND.name}</h2>
                 <button
                   data-testid="button-close-menu"
                   className="p-2 text-foreground/70 hover:text-foreground"
@@ -132,7 +133,7 @@ export function Header() {
                     className="block py-3 text-lg text-foreground/70 hover:text-foreground border-b border-border/30 transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    {link.label === 'Why Afnan?' ? 'Why Afnan Perfumes?' : link.label}
+                    {link.label}
                   </Link>
                 ))}
               </nav>

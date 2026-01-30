@@ -16,36 +16,33 @@ export function OurStory() {
             className="order-2 lg:order-1"
           >
             <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4">
-              Our Heritage
+              How It Works
             </p>
             <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl mb-6">
-              A Legacy of <br />
-              <span className="text-gradient-gold">Excellence</span>
+              From Video <br />
+              <span className="text-gradient-gold">to Dinner</span>
             </h2>
 
             <p className="text-foreground/80 leading-relaxed mb-6 text-sm md:text-base">
-              Afnan Perfumes has been at the forefront of luxury perfumery in Pakistan, 
-              crafting exquisite fragrances that capture the essence of elegance and sophistication.
+              You see a dish you love in an ad, click to open the product page, and order the full kit in seconds.
             </p>
 
             <p className="text-foreground/80 leading-relaxed mb-8 text-sm md:text-base">
-              Our master perfumers source the rarest and finest ingredients from around the world—from 
-              the precious oud of the Middle East to the delicate roses of Bulgaria. Each fragrance 
-              is a masterpiece, born from passion and an unwavering commitment to quality.
+              We pack the key ingredients and a balanced spice mix, so you can cook authentic Pakistani recipes at home without hunting items in the supermarket.
             </p>
 
             <div className="grid grid-cols-3 gap-4 md:gap-8 mb-10">
               <div>
-                <p className="font-serif text-2xl md:text-4xl text-primary mb-1">1000+</p>
-                <p className="text-xs md:text-sm text-muted-foreground">Happy Customers</p>
-              </div>
-              <div>
-                <p className="font-serif text-2xl md:text-4xl text-primary mb-1">100%</p>
-                <p className="text-xs md:text-sm text-muted-foreground">Authentic</p>
+                <p className="font-serif text-2xl md:text-4xl text-primary mb-1">4</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Starter Kits</p>
               </div>
               <div>
                 <p className="font-serif text-2xl md:text-4xl text-primary mb-1">COD</p>
                 <p className="text-xs md:text-sm text-muted-foreground">Nationwide</p>
+              </div>
+              <div>
+                <p className="font-serif text-2xl md:text-4xl text-primary mb-1">Easy</p>
+                <p className="text-xs md:text-sm text-muted-foreground">Step-by-step</p>
               </div>
             </div>
 
@@ -54,7 +51,7 @@ export function OurStory() {
               data-testid="link-story-about"
               className="inline-flex items-center gap-2 text-primary font-medium uppercase tracking-wide text-sm group"
             >
-              Discover Our Story
+              Learn More
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
@@ -70,7 +67,7 @@ export function OurStory() {
               <div className="aspect-[4/3] rounded-2xl overflow-hidden">
                 <img
                   src={storyImageUrl}
-                  alt="Perfume craftsmanship"
+                  alt="Cooking ingredients"
                   loading="lazy"
                   className="w-full h-full object-cover"
                 />

@@ -1,8 +1,8 @@
-# Afnan Perfumes - E-commerce Platform
+# Pakistani Recipe Kits - E-commerce Platform
 
 ## Overview
 
-This is a premium perfume e-commerce website for Afnan Perfumes, targeting the Pakistani market. The platform features a luxury fragrance catalog with Cash on Delivery (COD) checkout functionality. Built as a **fully static React application** with orders submitted directly to Google Sheets from the browser.
+This is a Pakistani recipe-kit e-commerce website. The platform features a small catalog of dish kits (ingredients + spice mix) with Cash on Delivery (COD) checkout functionality. Built as a **fully static React application** with orders submitted directly to Google Sheets from the browser.
 
 ## User Preferences
 

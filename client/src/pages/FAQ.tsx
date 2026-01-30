@@ -7,7 +7,7 @@ import { Footer } from '@/components/layout/Footer';
 const faqs = [
   {
     question: 'How do I place an order?',
-    answer: 'Simply browse our products, select the fragrance you love, and click "Buy with Cash on Delivery". Fill in your details (Name, WhatsApp, Address, City) and submit. Our team will confirm your order via WhatsApp.'
+    answer: 'Browse the kits, open any dish, and tap “Buy Now (COD)”. Fill in your details (Name, WhatsApp, Address, City) and submit. We’ll confirm your order via WhatsApp.'
   },
   {
     question: 'What payment methods do you accept?',
@@ -15,19 +15,19 @@ const faqs = [
   },
   {
     question: 'How long does delivery take?',
-    answer: 'Delivery typically takes 2-4 business days for major cities like Islamabad, Lahore, and Karachi. Remote areas may take 5-7 business days.'
+    answer: 'Delivery typically takes 2-4 business days for major cities. Remote areas may take 5-7 business days.'
   },
   {
     question: 'Is shipping free?',
     answer: 'Yes! We offer FREE shipping on all orders across Pakistan. No minimum order required.'
   },
   {
-    question: 'Are your products authentic?',
-    answer: 'Absolutely! All our perfumes are 100% authentic and sourced directly from trusted suppliers. We guarantee the quality of every product we sell.'
+    question: "What's included in a kit?",
+    answer: 'Each kit includes a balanced spice mix and a simple recipe card. Some kits include additional packed items (like garnish packs). The product page lists exactly what’s included and what you need to add from home.'
   },
   {
-    question: 'Can I return or exchange a product?',
-    answer: 'Yes, we offer a 7-day return policy for unopened products. If you receive a damaged or wrong product, please contact us immediately via WhatsApp and we will arrange a replacement.'
+    question: 'Can I return or exchange a kit?',
+    answer: 'If you receive a damaged or wrong item, contact us immediately on WhatsApp and we’ll arrange a replacement. For food/ingredient items, returns may be limited after opening.'
   },
   {
     question: 'How can I track my order?',
@@ -39,11 +39,11 @@ const faqs = [
   },
   {
     question: 'How do I contact customer support?',
-    answer: 'You can reach us via WhatsApp at +92 300 1234567 or email us at hello@afnanperfumes.pk. We typically respond within a few hours during business hours.'
+    answer: 'You can reach us via WhatsApp (number on the website footer) or by email. We typically respond within a few hours during business hours.'
   },
   {
     question: 'Can I order multiple products?',
-    answer: 'Absolutely! You can add multiple products to your order. During checkout, you can also add more products as add-ons to increase your order value and get everything delivered together.'
+    answer: 'Absolutely. You can add more kits as add-ons during checkout so everything is delivered together.'
   }
 ];
 

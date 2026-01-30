@@ -17,9 +17,9 @@ export default function Products() {
               transition={{ duration: 0.5 }}
               className="text-center mb-12"
             >
-              <h1 className="font-serif text-4xl md:text-5xl mb-4">Our Products</h1>
+              <h1 className="font-serif text-4xl md:text-5xl mb-4">Recipe Kits</h1>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Discover our complete collection of premium fragrances, crafted with the finest ingredients for the discerning connoisseur.
+                Pick a dish and order a complete kit (ingredients + spice mix) delivered to your door.
               </p>
             </motion.div>
 

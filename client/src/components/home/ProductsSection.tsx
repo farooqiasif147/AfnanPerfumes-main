@@ -18,13 +18,13 @@ export function ProductsSection() {
           className="text-center mb-16"
         >
           <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4">
-            Curated Selection
+            Ready to Cook
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-4">
-            Bestselling Fragrances
+            Popular Recipe Kits
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Discover our most beloved scents, crafted to perfection and cherished by fragrance connoisseurs worldwide.
+            Pick a dish, place your order, and get a complete kit delivered to your door.
           </p>
         </motion.div>
 
@@ -46,7 +46,7 @@ export function ProductsSection() {
             data-testid="link-view-all-products"
             className="inline-flex items-center gap-2 text-primary font-medium uppercase tracking-wide text-sm group"
           >
-            View All Fragrances
+            View All Kits
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </motion.div>

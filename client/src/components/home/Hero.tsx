@@ -9,7 +9,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImageUrl}
-          alt="Luxury perfume"
+          alt="Cooking ingredients and spices"
           loading="eager"
           className="w-full h-full object-cover"
         />
@@ -24,7 +24,7 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="text-gold-light uppercase tracking-[0.3em] text-sm mb-6"
           >
-            New Collection 2026
+            Pakistani Dish Kits
           </motion.p>
 
           <motion.h1
@@ -33,8 +33,8 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[1.1] mb-6"
           >
-            The Art of <br />
-            <span className="text-gradient-gold">Fragrance</span>
+            Cook the <br />
+            <span className="text-gradient-gold">Real Taste</span>
           </motion.h1>
 
           <motion.p
@@ -43,7 +43,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-white/80 text-lg md:text-xl leading-relaxed mb-10 max-w-lg"
           >
-            Discover our exquisite collection of luxury perfumes, crafted with the finest ingredients from around the world.
+            Buy a complete recipe kit (ingredients + spice mix) and cook iconic Pakistani dishes at home—no supermarket run needed.
           </motion.p>
 
           <motion.div
@@ -65,7 +65,7 @@ export function Hero() {
               data-testid="link-hero-story"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/30 text-white font-medium tracking-wide uppercase text-sm hover:bg-white/10 transition-colors"
             >
-              Our Story
+              How It Works
             </Link>
           </motion.div>
         </div>

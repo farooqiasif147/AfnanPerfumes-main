@@ -5,9 +5,10 @@ import { ShoppingBag, Minus, Plus, Star, Truck, RefreshCw, Shield, ChevronRight,
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { products } from '@/data/products';
+import { BRAND } from '@/lib/brand';
 
 // WhatsApp contact for order issues
-const WHATSAPP_NUMBER = '+923155657373';
+const WHATSAPP_NUMBER = BRAND.whatsapp;
 const FAILED_ORDERS_KEY = 'afnan_failed_orders';
 
 // Google Sheets Web App URL for direct order submission (static site compatible)
@@ -283,7 +284,7 @@ export default function Product() {
       : '';
     
     const message = encodeURIComponent(
-      `Hi, I tried to place an order on Afnan Perfumes but faced an issue.\n\nProduct: ${product.name}\nQuantity: ${quantity}${addOnsText}\nTotal: Rs. ${calculateFormTotal().toLocaleString()}\n\nPlease help me complete my order.`
+      `Hi, I tried to place an order on ${BRAND.name} but faced an issue.\n\nProduct: ${product.name}\nQuantity: ${quantity}${addOnsText}\nTotal: Rs. ${calculateFormTotal().toLocaleString()}\n\nPlease help me complete my order.`
     );
     window.open(`https://wa.me/${WHATSAPP_NUMBER.replace('+', '')}?text=${message}`, '_blank');
   };
@@ -327,7 +328,7 @@ export default function Product() {
     if (!upsellError) return;
     const upsellProduct = products.find(p => p.id === upsellError.productId);
     const message = encodeURIComponent(
-      `Hi, I tried to add a product to my order on Afnan Perfumes but faced an issue.\n\nProduct: ${upsellError.productName}\nPrice: Rs. ${upsellProduct?.price.toLocaleString() || 'N/A'}\n\nPlease help me complete this addition.`
+      `Hi, I tried to add a product to my order on ${BRAND.name} but faced an issue.\n\nProduct: ${upsellError.productName}\nPrice: Rs. ${upsellProduct?.price.toLocaleString() || 'N/A'}\n\nPlease help me complete this addition.`
     );
     window.open(`https://wa.me/${WHATSAPP_NUMBER.replace('+', '')}?text=${message}`, '_blank');
   };
@@ -531,11 +532,11 @@ export default function Product() {
                 </div>
                 <div className="flex flex-col md:flex-row items-center gap-1 md:gap-3 text-center md:text-left">
                   <RefreshCw className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground text-xs md:text-sm">7-Day Returns</span>
+                  <span className="text-muted-foreground text-xs md:text-sm">COD Available</span>
                 </div>
                 <div className="flex flex-col md:flex-row items-center gap-1 md:gap-3 text-center md:text-left">
                   <Shield className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground text-xs md:text-sm">Authentic</span>
+                  <span className="text-muted-foreground text-xs md:text-sm">Pre-measured</span>
                 </div>
               </div>
 
@@ -552,7 +553,7 @@ export default function Product() {
                           : 'text-muted-foreground hover:text-foreground'
                       }`}
                     >
-                      {tab === 'notes' ? 'Notes' : tab}
+                      {tab === 'notes' ? 'Contents' : tab}
                     </button>
                   ))}
                 </div>
@@ -572,7 +573,7 @@ export default function Product() {
                       </div>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-2 md:px-3 py-1 bg-muted rounded-full text-xs md:text-sm capitalize">
-                          {product.intensity} Intensity
+                          {product.intensity} Spice Level
                         </span>
                         {product.occasion.map((occ) => (
                           <span key={occ} className="px-2 md:px-3 py-1 bg-muted rounded-full text-xs md:text-sm">
@@ -585,15 +586,15 @@ export default function Product() {
                   {activeTab === 'notes' && (
                     <div className="space-y-3 md:space-y-4">
                       <div>
-                        <p className="font-medium text-xs md:text-sm mb-1 md:mb-2">Top Notes</p>
+                        <p className="font-medium text-xs md:text-sm mb-1 md:mb-2">Main Ingredients</p>
                         <p className="text-muted-foreground text-sm">{product.notes.top.join(', ')}</p>
                       </div>
                       <div>
-                        <p className="font-medium text-xs md:text-sm mb-1 md:mb-2">Heart Notes</p>
+                        <p className="font-medium text-xs md:text-sm mb-1 md:mb-2">Spice & Flavor Packs</p>
                         <p className="text-muted-foreground text-sm">{product.notes.heart.join(', ')}</p>
                       </div>
                       <div>
-                        <p className="font-medium text-xs md:text-sm mb-1 md:mb-2">Base Notes</p>
+                        <p className="font-medium text-xs md:text-sm mb-1 md:mb-2">You Add From Home</p>
                         <p className="text-muted-foreground text-sm">{product.notes.base.join(', ')}</p>
                       </div>
                     </div>
@@ -601,9 +602,9 @@ export default function Product() {
                   {activeTab === 'shipping' && (
                     <div className="space-y-3 md:space-y-4 text-foreground/80 text-sm">
                       <p>Free delivery across Pakistan.</p>
-                      <p>Cash on Delivery available in all cities.</p>
+                      <p>Cash on Delivery available in major cities.</p>
                       <p>Delivery typically takes 2-4 business days.</p>
-                      <p>7-day return policy for unopened products.</p>
+                      <p>If you receive a damaged or wrong item, contact us within 48 hours for support.</p>
                     </div>
                   )}
                 </div>
@@ -845,7 +846,7 @@ export default function Product() {
                 {orderCode && (
                   <p className="text-primary font-medium text-lg mb-1">Order ID: {orderCode}</p>
                 )}
-                <p className="text-muted-foreground text-sm">Thank you for shopping with Afnan Perfumes</p>
+                <p className="text-muted-foreground text-sm">Thank you for shopping with {BRAND.name}</p>
                 <p className="text-muted-foreground text-sm mt-1">Our Customer Support team will call you for Order confirmation in a short time.</p>
 
                 {upsellSuccess.length > 0 && (

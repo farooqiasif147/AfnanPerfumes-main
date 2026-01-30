@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { BRAND } from '@/lib/brand';
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -47,8 +48,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-medium mb-2">Visit Us</h3>
                   <p className="text-muted-foreground">
-                    Blue Area, F-6<br />
-                    Islamabad, Pakistan
+                    {BRAND.locationShort}
                   </p>
                 </div>
               </div>
@@ -59,8 +59,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium mb-2">Call / WhatsApp</h3>
-                  <p className="text-muted-foreground">+92 300 1234567</p>
-                  <p className="text-sm text-muted-foreground">Mon-Sat 10am-8pm PKT</p>
+                  <p className="text-muted-foreground">{BRAND.whatsapp}</p>
+                  <p className="text-sm text-muted-foreground">{BRAND.supportHours}</p>
                 </div>
               </div>
 
@@ -70,7 +70,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium mb-2">Email Us</h3>
-                  <p className="text-muted-foreground">hello@afnanperfumes.pk</p>
+                  <p className="text-muted-foreground">{BRAND.email}</p>
                   <p className="text-sm text-muted-foreground">We reply within 24 hours</p>
                 </div>
               </div>

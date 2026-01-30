@@ -3,6 +3,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Newsletter } from "@/components/home/Newsletter";
 import { storyImageUrl, heroImageUrl } from "@/data/products";
+import { BRAND } from "@/lib/brand";
 
 export default function About() {
   return (
@@ -13,7 +14,7 @@ export default function About() {
           <div className="absolute inset-0 z-0">
             <img
               src={heroImageUrl}
-              alt="AFNAN PERFUME Heritage"
+              alt="Pakistani recipe kits"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/60" />
@@ -25,14 +26,13 @@ export default function About() {
               transition={{ duration: 0.6 }}
             >
               <p className="text-primary uppercase tracking-[0.3em] text-sm mb-4">
-                Our Story
+                About
               </p>
               <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white mb-6">
-                The Art of Perfumery
+                How It Works
               </h1>
               <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto">
-                Since 1987, we've been crafting extraordinary fragrances that
-                tell unique stories.
+                Order a kit, get it delivered, and cook an iconic Pakistani dish at home.
               </p>
             </motion.div>
           </div>
@@ -48,26 +48,22 @@ export default function About() {
                 transition={{ duration: 0.6 }}
               >
                 <h2 className="font-serif text-4xl md:text-5xl mb-6">
-                  A Legacy of Excellence
+                  Cook Without the Supermarket Run
                 </h2>
                 <p className="text-foreground/80 leading-relaxed mb-6">
-                  AFNAN PERFUME was founded in Paris in 1987 by master perfumer
-                  Jean-Claude Beaumont. With a vision to create fragrances that
-                  transcend the ordinary, he established a maison dedicated to
-                  the art of fine perfumery.
+                  {BRAND.name} is built for people who love Pakistani food but
+                  hate last-minute ingredient hunting. Each kit is designed to
+                  make the dish easy, repeatable, and consistent.
                 </p>
                 <p className="text-foreground/80 leading-relaxed mb-6">
-                  Today, our team of master perfumers continues this tradition,
-                  traveling the world to source the rarest and most precious
-                  ingredients. From the jasmine fields of Grasse to the
-                  sandalwood forests of Mysore, we spare no effort in our
-                  pursuit of olfactory perfection.
+                  You’ll get a balanced spice mix, a simple recipe card, and the
+                  key ingredients packed together. You add the basics from your
+                  kitchen (like oil and water), and you’re ready to cook.
                 </p>
                 <p className="text-foreground/80 leading-relaxed">
-                  Each AFNAN PERFUME fragrance is a masterpiece, meticulously
-                  crafted over months of careful development and refinement. We
-                  believe that a truly great perfume should evoke emotion,
-                  create memories, and become an extension of one's personality.
+                  Our goal is simple: click from a cooking video, order in
+                  seconds, and cook a dish that tastes like you made it the
+                  “proper” way.
                 </p>
               </motion.div>
               <motion.div
@@ -79,7 +75,7 @@ export default function About() {
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden">
                   <img
                     src={storyImageUrl}
-                    alt="Perfume craftsmanship"
+                    alt="Cooking ingredients"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -108,19 +104,19 @@ export default function About() {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Uncompromising Quality",
+                  title: "Balanced Taste",
                   description:
-                    "We source only the finest natural ingredients, never compromising on quality for cost. Every drop of AFNAN PERFUME perfume reflects our commitment to excellence.",
+                    "Our recipes are tested for Pakistani taste: spice balance, aroma, and that final restaurant-style finish.",
                 },
                 {
-                  title: "Artisanal Craftsmanship",
+                  title: "Zero Guesswork",
                   description:
-                    "Our master perfumers bring decades of expertise to every creation. Each fragrance undergoes hundreds of iterations before achieving perfection.",
+                    "No measuring 15 spices. No searching 6 shops. Everything is portioned and explained step-by-step.",
                 },
                 {
-                  title: "Sustainable Luxury",
+                  title: "Convenient Delivery",
                   description:
-                    "We believe luxury and responsibility go hand in hand. Our sustainable practices ensure we protect the precious resources we depend upon.",
+                    "Order today and get your kit delivered with Cash on Delivery available across Pakistan.",
                 },
               ].map((value, index) => (
                 <motion.div
@@ -162,10 +158,10 @@ export default function About() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { number: "37+", label: "Years of Excellence" },
-                { number: "150+", label: "Unique Fragrances" },
-                { number: "50+", label: "Countries Worldwide" },
-                { number: "1M+", label: "Happy Customers" },
+                { number: "4", label: "Starter Kits" },
+                { number: "COD", label: "Nationwide" },
+                { number: "3-4", label: "Servings Per Kit" },
+                { number: "1", label: "Click to Order" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
