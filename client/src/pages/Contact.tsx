@@ -48,7 +48,12 @@ export default function Contact() {
                 <div>
                   <h3 className="font-medium mb-2">Visit Us</h3>
                   <p className="text-muted-foreground">
-                    {BRAND.locationShort}
+                    {BRAND.addressLines.map((line, index) => (
+                      <span key={line}>
+                        {line}
+                        {index < BRAND.addressLines.length - 1 ? <br /> : null}
+                      </span>
+                    ))}
                   </p>
                 </div>
               </div>
