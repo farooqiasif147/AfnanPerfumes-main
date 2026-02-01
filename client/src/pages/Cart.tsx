@@ -5,7 +5,6 @@ import { Minus, Plus, X, ShoppingBag, ArrowRight, Check, Package } from 'lucide-
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { products } from '@/data/products';
-import { BRAND } from '@/lib/brand';
 
 interface CartItem {
   product: typeof products[0];
@@ -423,7 +422,7 @@ export default function Cart() {
                   <Check className="w-7 h-7 md:w-8 md:h-8 text-green-600" />
                 </div>
                 <h2 className="font-serif text-xl md:text-2xl mb-2">Order Placed Successfully!</h2>
-                <p className="text-muted-foreground text-sm">Thank you for shopping with {BRAND.name}</p>
+                <p className="text-muted-foreground text-sm">Thank you for shopping with Afnan Perfumes</p>
               </div>
 
               {upsellProducts.length > 0 && (

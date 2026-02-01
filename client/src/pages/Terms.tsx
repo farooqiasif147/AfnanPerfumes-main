@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { BRAND } from "@/lib/brand";
 
 export default function Terms() {
   return (
@@ -31,7 +30,7 @@ export default function Terms() {
                 1. Agreement to Terms
               </h2>
               <p className="leading-relaxed">
-                By accessing or using the {BRAND.name} website, you agree to be
+                By accessing or using the AFNAN PERFUME website, you agree to be
                 bound by these Terms and Conditions. If you do not agree with
                 any part of these terms, you may not access our website or use
                 our services.
@@ -68,8 +67,7 @@ export default function Terms() {
               </p>
               <p className="leading-relaxed">
                 Payment must be made at the time of ordering. We accept major
-                payment methods as indicated at checkout. Cash on Delivery (COD)
-                is available across Pakistan.
+                credit cards and other payment methods as indicated at checkout.
               </p>
             </section>
 
@@ -91,9 +89,9 @@ export default function Terms() {
               </h2>
               <p className="leading-relaxed">
                 You may return unopened products within 30 days of delivery for
-                a full refund. For food/ingredient items, returns may be limited
-                after opening. Please see our Shipping & Returns page for
-                complete details.
+                a full refund. Opened products cannot be returned due to the
+                nature of fragrance products. Please see our Shipping & Returns
+                page for complete details.
               </p>
             </section>
 
@@ -103,7 +101,7 @@ export default function Terms() {
               </h2>
               <p className="leading-relaxed">
                 All content on this website, including text, graphics, logos,
-                images, and software, is the property of {BRAND.name} and is
+                images, and software, is the property of AFNAN PERFUME and is
                 protected by international copyright laws. You may not
                 reproduce, distribute, or create derivative works without our
                 written consent.
@@ -115,7 +113,7 @@ export default function Terms() {
                 7. Limitation of Liability
               </h2>
               <p className="leading-relaxed">
-                {BRAND.name} shall not be liable for any indirect, incidental,
+                AFNAN PERFUME shall not be liable for any indirect, incidental,
                 special, consequential, or punitive damages resulting from your
                 use of or inability to use our website or products. Our
                 liability is limited to the amount you paid for the products.
@@ -128,7 +126,7 @@ export default function Terms() {
               </h2>
               <p className="leading-relaxed">
                 These Terms shall be governed by and construed in accordance
-                with the laws of Pakistan, without regard to its conflict of law
+                with the laws of France, without regard to its conflict of law
                 provisions.
               </p>
             </section>
@@ -139,7 +137,8 @@ export default function Terms() {
               </h2>
               <p className="leading-relaxed">
                 For questions about these Terms and Conditions, please contact
-                us at {BRAND.email}.
+                us at legal@lumiere.com or write to us at 123 Fragrance Avenue,
+                Paris, France 75008.
               </p>
             </section>
           </motion.div>

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { BRAND } from "@/lib/brand";
 
 export default function Privacy() {
   return (
@@ -32,10 +31,11 @@ export default function Privacy() {
                   Introduction
                 </h2>
                 <p className="leading-relaxed">
-                  At {BRAND.name}, we are committed to protecting your privacy
-                  and keeping your personal information secure. This Privacy
-                  Policy explains how we collect, use, and safeguard your
-                  information when you visit our website or place an order.
+                  At AFNAN PERFUME, we are committed to protecting your privacy
+                  and ensuring the security of your personal information. This
+                  Privacy Policy explains how we collect, use, disclose, and
+                  safeguard your information when you visit our website or make
+                  a purchase.
                 </p>
               </section>
 
@@ -128,7 +128,8 @@ export default function Privacy() {
                 </h2>
                 <p className="leading-relaxed">
                   If you have any questions about this Privacy Policy or our
-                  data practices, please contact us at {BRAND.email}.
+                  data practices, please contact us at privacy@lumiere.com or
+                  write to us at 123 Fragrance Avenue, Paris, France 75008.
                 </p>
               </section>
             </div>

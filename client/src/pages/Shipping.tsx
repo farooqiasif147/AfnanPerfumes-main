@@ -30,17 +30,17 @@ export default function Shipping() {
               {
                 icon: Truck,
                 title: "Free Shipping",
-                description: "Across Pakistan",
+                description: "On orders over $75",
               },
               {
                 icon: Clock,
-                title: "2-4 Days",
-                description: "Major cities",
+                title: "3-5 Days",
+                description: "Standard delivery time",
               },
               {
                 icon: RefreshCw,
-                title: "Issue Support",
-                description: "Damaged/wrong items",
+                title: "30-Day Returns",
+                description: "Hassle-free returns",
               },
             ].map((item, index) => (
               <motion.div
@@ -87,18 +87,25 @@ export default function Shipping() {
                     <tr>
                       <td className="py-4 px-6">Standard Shipping</td>
                       <td className="py-4 px-6 text-muted-foreground">
-                        2-4 business days
+                        3-5 business days
                       </td>
                       <td className="py-4 px-6 text-right">
-                        Free
+                        $10 (Free over $75)
                       </td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6">Express Shipping</td>
                       <td className="py-4 px-6 text-muted-foreground">
-                        1-2 business days (select cities)
+                        1-2 business days
                       </td>
-                      <td className="py-4 px-6 text-right">Rs. 299</td>
+                      <td className="py-4 px-6 text-right">$25</td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 px-6">Next Day Delivery</td>
+                      <td className="py-4 px-6 text-muted-foreground">
+                        Next business day
+                      </td>
+                      <td className="py-4 px-6 text-right">$40</td>
                     </tr>
                   </tbody>
                 </table>
@@ -108,16 +115,19 @@ export default function Shipping() {
             <section>
               <div className="flex items-center gap-3 mb-6">
                 <Globe className="w-6 h-6 text-primary" />
-                <h2 className="font-serif text-2xl">Cash on Delivery (COD)</h2>
+                <h2 className="font-serif text-2xl">International Shipping</h2>
               </div>
               <div className="bg-card border border-border rounded-xl p-6 space-y-4 text-foreground/80">
                 <p className="leading-relaxed">
-                  We offer Cash on Delivery across Pakistan. You pay when the
-                  parcel arrives at your doorstep.
+                  We ship to over 50 countries worldwide. International shipping
+                  rates are calculated at checkout based on your location and
+                  order weight.
                 </p>
                 <p className="leading-relaxed">
-                  After you place an order, we may confirm it via WhatsApp
-                  before dispatching.
+                  Please note that international orders may be subject to import
+                  duties and taxes, which are the responsibility of the
+                  recipient. Delivery times vary by location and typically range
+                  from 7-14 business days.
                 </p>
               </div>
             </section>
@@ -130,26 +140,27 @@ export default function Shipping() {
               <div className="bg-card border border-border rounded-xl p-6 space-y-4 text-foreground/80">
                 <p className="leading-relaxed">
                   We want you to be completely satisfied with your purchase. If
-                  you receive a damaged or wrong item, contact us and we’ll help
-                  resolve it quickly.
+                  you're not happy with your order, you may return it within 30
+                  days of delivery.
                 </p>
                 <div className="space-y-2">
                   <p className="font-medium text-foreground">
                     Return Conditions:
                   </p>
                   <ul className="list-disc pl-6 space-y-1">
-                    <li>Report any damage/wrong item within 48 hours</li>
+                    <li>Products must be unopened and in original packaging</li>
                     <li>Include original receipt or proof of purchase</li>
+                    <li>Items must be returned within 30 days of delivery</li>
                     <li>
-                      Food/ingredient items may not be eligible for return after
-                      opening
+                      Opened or used products cannot be returned due to hygiene
+                      reasons
                     </li>
                   </ul>
                 </div>
                 <p className="leading-relaxed">
                   To initiate a return, please contact our customer service team
-                  via WhatsApp or email (see Contact page). We will guide you on
-                  the next steps.
+                  at returns@lumiere.com or call +33 1 23 45 67 89. We will
+                  provide you with a prepaid return label for domestic orders.
                 </p>
               </div>
             </section>
@@ -161,13 +172,15 @@ export default function Shipping() {
               </div>
               <div className="bg-card border border-border rounded-xl p-6 space-y-4 text-foreground/80">
                 <p className="leading-relaxed">
-                  Every kit is carefully packed and labeled to help you prep
-                  quickly and cook confidently. Packaging typically includes:
+                  Every Afnan Perfumes fragrance is carefully packaged to ensure
+                  it arrives in perfect condition. Our luxury packaging
+                  includes:
                 </p>
                 <ul className="list-disc pl-6 space-y-1">
-                  <li>Sealed ingredient packs</li>
-                  <li>Recipe card with step-by-step cooking guide</li>
-                  <li>Outer shipping box with protective padding</li>
+                  <li>Protective foam inserts</li>
+                  <li>Signature Afnan Perfumes gift box</li>
+                  <li>Tissue paper wrapping</li>
+                  <li>Sealed outer shipping box</li>
                 </ul>
               </div>
             </section>

@@ -1,6 +1,5 @@
 import { Link } from 'wouter';
 import { Instagram, Facebook, Twitter, Mail, MapPin, Phone } from 'lucide-react';
-import { BRAND } from '@/lib/brand';
 
 const footerLinks = {
   shop: [
@@ -10,7 +9,7 @@ const footerLinks = {
   ],
   about: [
     { label: 'Our Story', href: '/about' },
-    { label: 'Why Recipe Kits?', href: '/why-afnan' },
+    { label: 'Why Afnan Perfumes?', href: '/why-afnan' },
   ],
   support: [
     { label: 'Contact Us', href: '/contact' },
@@ -31,10 +30,10 @@ export function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-8 lg:gap-12">
             <div className="col-span-2 md:col-span-1">
               <Link href="/" data-testid="link-footer-logo">
-                <h2 className="font-serif text-lg md:text-xl tracking-[0.1em] mb-4 md:mb-6">{BRAND.name}</h2>
+                <h2 className="font-serif text-lg md:text-xl tracking-[0.1em] mb-4 md:mb-6">AFNAN PERFUMES</h2>
               </Link>
               <p className="text-xs md:text-sm text-muted-foreground leading-relaxed mb-4 md:mb-6">
-                {BRAND.tagline}
+                Premium fragrances with Cash on Delivery across Pakistan.
               </p>
               <div className="flex gap-3">
                 <a
@@ -124,16 +123,16 @@ export function Footer() {
                 <li className="flex items-start gap-2 md:gap-3">
                   <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                   <span className="text-xs md:text-sm text-muted-foreground">
-                    {BRAND.locationShort}
+                    Islamabad, Pakistan
                   </span>
                 </li>
                 <li className="flex items-center gap-2 md:gap-3">
                   <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                  <span className="text-xs md:text-sm text-muted-foreground">{BRAND.whatsapp}</span>
+                  <span className="text-xs md:text-sm text-muted-foreground">+92 300 1234567</span>
                 </li>
                 <li className="flex items-center gap-2 md:gap-3">
                   <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                  <span className="text-xs md:text-sm text-muted-foreground">{BRAND.email}</span>
+                  <span className="text-xs md:text-sm text-muted-foreground">hello@afnanperfumes.pk</span>
                 </li>
               </ul>
             </div>
@@ -142,7 +141,7 @@ export function Footer() {
 
         <div className="py-4 md:py-6 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs md:text-sm text-muted-foreground">
-            © {new Date().getFullYear()} {BRAND.name}. All rights reserved.
+            © {new Date().getFullYear()} Afnan Perfumes. All rights reserved.
           </p>
           <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             {footerLinks.legal.map((link) => (

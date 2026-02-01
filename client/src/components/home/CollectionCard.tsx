@@ -31,7 +31,7 @@ export function CollectionCard({ collection, index = 0 }: CollectionCardProps) {
 
         <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
           <p className="text-white/60 text-xs uppercase tracking-wider mb-2">
-            {collection.productCount} Kits
+            {collection.productCount} Fragrances
           </p>
           <h3 className="font-serif text-2xl md:text-3xl text-white mb-2">
             {collection.name}

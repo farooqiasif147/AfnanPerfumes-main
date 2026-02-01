@@ -6,33 +6,33 @@ import { Check, Award, Truck, Shield, Heart, Star } from 'lucide-react';
 const reasons = [
   {
     icon: Award,
-    title: 'Balanced Spice Mix',
-    description: 'Pre-measured spice blends tuned for Pakistani taste—consistent results every time.'
+    title: 'Premium Quality',
+    description: 'We use only the finest ingredients sourced from around the world to create our signature fragrances.'
   },
   {
     icon: Heart,
-    title: 'Made for Home Cooks',
-    description: 'Simple steps, clear quantities, and no guesswork. Anyone can cook these dishes.'
+    title: 'Made with Passion',
+    description: 'Each perfume is crafted with love and dedication by our master perfumers with decades of experience.'
   },
   {
     icon: Truck,
     title: 'Fast Delivery',
-    description: 'Quick delivery across Pakistan with Cash on Delivery available in major cities.'
+    description: 'We offer quick delivery across Pakistan with Cash on Delivery available in all major cities.'
   },
   {
     icon: Shield,
-    title: 'Carefully Packed',
-    description: 'Ingredients are packed neatly and labeled so you can prep quickly and cook confidently.'
+    title: '100% Authentic',
+    description: 'Every product is guaranteed authentic with our quality seal and satisfaction guarantee.'
   },
   {
     icon: Star,
     title: 'Customer First',
-    description: 'Support on WhatsApp if you need help cooking or have an issue with delivery.'
+    description: 'Our customers are our priority. We are committed to providing exceptional service and support.'
   },
   {
     icon: Check,
     title: 'Great Value',
-    description: 'Save time, avoid multiple store trips, and still get a restaurant-style result.'
+    description: 'Premium fragrances at competitive prices. Luxury should be accessible to everyone.'
   }
 ];
 
@@ -49,9 +49,9 @@ export default function WhyAfnan() {
               transition={{ duration: 0.5 }}
               className="text-center mb-16"
             >
-              <h1 className="font-serif text-4xl md:text-5xl mb-4">Why Recipe Kits?</h1>
+              <h1 className="font-serif text-4xl md:text-5xl mb-4">Why Afnan Perfumes?</h1>
               <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-                Discover what makes our kits the easiest way to cook Pakistani dishes at home.
+                Discover what makes Afnan Perfumes the preferred choice for fragrance lovers across Pakistan.
               </p>
             </motion.div>
 
@@ -79,15 +79,15 @@ export default function WhyAfnan() {
               transition={{ duration: 0.5, delay: 0.6 }}
               className="mt-20 bg-muted/50 rounded-2xl p-8 md:p-12 text-center"
             >
-              <h2 className="font-serif text-3xl mb-4">Ready to Cook?</h2>
+              <h2 className="font-serif text-3xl mb-4">Ready to Experience the Difference?</h2>
               <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-                Browse the kits and order with Cash on Delivery. Your ingredients and spice mix arrive together, ready to cook.
+                Browse our collection and find your perfect scent. With Cash on Delivery available across Pakistan, shopping has never been easier.
               </p>
               <a
                 href="/products"
                 className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-medium tracking-wide uppercase text-sm hover:bg-primary/90 transition-colors"
               >
-                View Kits
+                Shop Now
               </a>
             </motion.div>
           </div>
