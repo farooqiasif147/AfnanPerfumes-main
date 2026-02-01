@@ -124,12 +124,7 @@ export function Footer() {
                 <li className="flex items-start gap-2 md:gap-3">
                   <MapPin className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                   <span className="text-xs md:text-sm text-muted-foreground">
-                    {BRAND.addressLines.map((line, index) => (
-                      <span key={line}>
-                        {line}
-                        {index < BRAND.addressLines.length - 1 ? <br /> : null}
-                      </span>
-                    ))}
+                    {BRAND.locationShort}
                   </span>
                 </li>
                 <li className="flex items-center gap-2 md:gap-3">
